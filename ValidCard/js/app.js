@@ -1,27 +1,45 @@
+//asegurarse que el usuario no ungreso un campo vacío
+
 var cardNumber = prompt('Ingresa el número de tarjeta');
+ if (cardNumber != '') {
+ 	isValidCard(cardNumber); 
+ 	}  else {
+ 	alert('Ingresa un número');
+ 	var cardNumber = prompt('Ingresa el número de tarjeta');
+ }
 
-var isValidCard = function(cardNumber){
+ //Iniciar la función
 
-	var arr = cardNumber.split('');
-	arr.reverse();
-	var prod= 0;
-	var sum= 0;
+function isValidCard (cardNumber){
+
+ //Convertir a array el número ingresado e invertirlo
+
+ var arr = cardNumber.split('');
+ arr.reverse();
+	
+ //Declarar variables result y sum que usaremos después
  
- for (var i = 0; i < arr.length; i++) {
+ var result= 0;
+ var sum= 0;
+ // Recorrer el arreglo y por medio de un if verificar los que esten en posición par
+ for (i = 0; i < arr.length ; i++) {
 
- 	if (i % 2 === 0) {
- 		arr[i] *= 2 ;
- 	}
- 	if (arr[i]<10) {
- 		arr[i]=
- 	}
- }
+ 	 if (i % 2 === 0) {
+ 		result= arr[i] * 2 ;
+ 	 }
+ 	} 
 
- for (var i = 0; i < arr.length; i++) {
- 	sum = sum + arr[i];
- }
- 	if (sum % 10 === 0){
- 		console.log('is Valid Card')
- 	}  
+ //Si el numero duplicado es mayor o igual a 10, sumar sus digitos	
+ 	 if (result>=10) {
+
+	   for (j = 0; j < result.length ; j++) {
+ 	   sum += result[j];
+ 	   }
+ 	 }
+
+ 	 if (sum % 10 === 0){
+ 		return('is Valid Card');
+ 	 }  else {
+		return('is not a Valid Card')
+ 	 }
 }
-

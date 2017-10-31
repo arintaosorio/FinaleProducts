@@ -22,4 +22,4 @@ La fórmula para descifrar es: (x - n) % 26
 10. Usar la formula (x - n) % 26 para descifrar el texto de código ASCII a letras.
 11. Retornar el texto descifrado.
 
-![Diagrama De Flujo](http://thumbs.subefotos.com/487092aad19444811931f101b3ea5d2do.jpg)
+![Diagrama De Flujo](diagramaCaesarCipher.jpg)
