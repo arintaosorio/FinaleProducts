@@ -1,4 +1,4 @@
-//asegurarse que el usuario no ungreso un campo vacío
+//asegurarse que el usuario no ingresó un campo vacío
 
 var cardNumber = prompt('Ingresa el número de tarjeta');
  if (cardNumber != '') {
