@@ -1,4 +1,5 @@
 #Cifrado César
+
 Crea una web que pida, por medio de un prompt(), una frase al usuario y devuelva el mismo mensaje encriptado según el algoritmo de Cifrado César con el parámetro de desplazamiento de 33 espacios hacia la derecha
 
 Por ejemplo:
@@ -6,7 +7,9 @@ Por ejemplo:
 Texto original: ABCDEFGHIJKLMNOPQRSTUVWXYZ
 Texto codificado: HIJKLMNOPQRSTUVWXYZABCDEFG
 
-La fórmula para descifrar es: (x - n) % 26
+Fórmulas
+Cifrar: (x - 65 + n) % 26 + 65 
+Descifrar: (x - n) % 26
 
 #Pseudocódigo
 
