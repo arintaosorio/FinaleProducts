@@ -36,6 +36,8 @@ function isValidCard (cardNumber){
  	   sum += result[j];
  	   }
  	 }
+ 	 //FALTA SUMAR NUEVOS Y ANTERIORES DIGITOS
+ //Si el residuo de la division de la suma de los digitos entre 10 es 0, es válida
 
  	 if (sum % 10 === 0){
  		return('is Valid Card');

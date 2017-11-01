@@ -5,12 +5,12 @@ Descifrar: (x - n) % 26
 
 //asegurarse que el usuario no ingresó un campo vacío
 
-var text = prompt('Ingresa el texto que quieres descifrar');
+var text = prompt('Ingresa el texto que quieres encriptar');
  if (text != '') {
  	cipher(text); 
  	}  else {
  	alert('Ingresa un texto');
- 	var text = prompt('Ingresa el texto que quieres descifrar');
+ 	var text = prompt('Ingresa el texto que quieres encriptar');
  }
 
 
